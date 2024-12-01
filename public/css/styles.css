@@ -1,0 +1,87 @@
+body {
+    background-color: #1b2424;
+    font-family: Arial, sans-serif;
+    color: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #fdfdfd;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(85, 10, 107);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#chatBox {
+    flex-grow: 1; /* Esto permite que el input ocupe el espacio restante */
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+#chatBox:focus {
+    border-color: #460681;
+    box-shadow: 0 0 5px rgba(70, 6, 129, 0.5);
+}
+
+#messageLogs {
+    margin-top: 10px;
+    padding: 15px;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #969595;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fdfdfd;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    color: #fdfdfd;
+    margin-top: 5px;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #575757;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Impide que el botón se divida si el texto es largo */
+}
+
+#sendButton:hover {
+    background-color: #5a0a93; /* Color más claro al pasar el mouse */
+}
+
+#sendButton:active {
+    background-color: #3d0463; /* Color más oscuro al hacer clic */
+}
