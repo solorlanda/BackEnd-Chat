@@ -24,4 +24,4 @@ Para ejecutar este proyecto en tu máquina local, sigue los siguientes pasos:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/chat-en-tiempo-real.git
+git clone https://github.com/solorlanda/BackEnd-Chat.git
