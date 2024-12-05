@@ -39,9 +39,9 @@ messages = JSON.parse(await fs.promises.readFile(messagesFilePath, "utf-8"));
 const io = new Server(httpServer);
 io.on("connection", (socket) => {
     console.log(`Nuevo cliente conectado con el ID: ${socket.id}`);
-
     socket.on("newUser", (data) => {
         socket.broadcast.emit("newUser", data);
+        io.emit("messageLogs", messages);
     })
 
     socket.on("message", async (data) => {
